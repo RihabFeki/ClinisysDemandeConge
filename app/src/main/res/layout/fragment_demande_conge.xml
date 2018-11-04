@@ -1,0 +1,498 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="1"
+    tools:context="com.csys.clinisys.demandeconge.fragment.ListeDemandeCongeFragment">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+
+               <!-- <ImageView
+                    android:id="@+id/imageEmployee"
+                    android:layout_width="117dp"
+                    android:layout_height="95dp"
+
+                    android:background="@color/accent"
+                    app:srcCompat="@drawable/ic_profile" />
+-->
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editTxtNom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:hint="Nom"
+                        android:inputType="textPersonName"
+                        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtTxtPrenom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:hint="Prenom"
+                        android:inputType="textPersonName"
+                        android:textAppearance="@style/TextAppearance.AppCompat" />
+                </android.support.design.widget.TextInputLayout>
+
+              <!--  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+
+
+                </LinearLayout>
+-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtTextMatricule"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Matricule"
+                        android:inputType="textPersonName"
+                        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="148dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtTextNbreJours"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:hint="Nbre de jours en cours :"
+                        android:inputType="number"
+                        android:textAppearance="@style/TextAppearance.AppCompat" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txtViewJour2"
+                    android:layout_width="49dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="J"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:weightSum="1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+
+               android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtViewTypeConge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+
+                    android:text="Type : "
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:weightSum="1" />
+
+                <Spinner
+                   android:id="@+id/spinnerTypeConge"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputEdtTxtSoldeConge"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/edtTxtSoldeConge"
+                        android:layout_width="114dp"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:hint="Solde :"
+                        android:inputType="number"
+                        android:textAppearance="@style/TextAppearance.AppCompat">
+
+                        <requestFocus />
+
+                    </EditText>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/txtViewJour1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="7dp"
+                    android:text="J"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:weightSum="1" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="0.02"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:id="@+id/LigneDemiJournnee">
+
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxDJ"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Demi journée "
+                    />
+
+                <LinearLayout
+                    android:layout_width="143dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <RadioGroup
+                        android:id="@+id/radioDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonMatin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.49"
+                            android:checked="true"
+                            android:text="Matin" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonMidi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.49"
+                            android:text="L'après midi" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/LigneHeure">
+
+
+    <CheckBox
+        android:id="@+id/checkBoxH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Par heure "
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTxtHD"
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Heure Début"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTxtHF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Heure Fin"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="0.02"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtViewDu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Du :"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+<!--
+<android.support.design.widget.TextInputLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/DateD">
+-->
+                <EditText
+                    android:id="@+id/edtTextDateDu"
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:inputType="date" />
+<!--</android.support.design.widget.TextInputLayout>-->
+
+
+                <TextView
+                    android:id="@+id/txtViewAu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Au :"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+              <!--  <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DateF">-->
+                <EditText
+                    android:id="@+id/edtTextDateAu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:inputType="date" />
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtViewNbreJours"
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Nbre de jours  :"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <EditText
+                    android:id="@+id/edtTextNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtViewInterim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intérim assuré par :"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <EditText
+                    android:id="@+id/edtTextInterim"
+                    android:layout_width="265dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="0.02"
+                android:orientation="horizontal"
+                android:weightSum="1">
+              <!--  <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Motif">
+-->
+                <TextView
+                    android:id="@+id/txtViewMotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Motif sans intérim :"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <EditText
+                    android:id="@+id/edtTextMotif"
+                    android:layout_width="265dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="0.02"
+                android:orientation="horizontal"
+                android:weightSum="1">
+               <!-- <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coordonnee">-->
+                <TextView
+                    android:id="@+id/txtViewCoordonnee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Coordonnée durant le congé :"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <EditText
+                    android:id="@+id/edtTextCoordonnee"
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="8"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="0.10"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtViewObservation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="Observation:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <EditText
+                    android:id="@+id/edtTextObservation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="0.08"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/buttonAjouter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="#43A047"
+                    android:text="Ajouter Demande" />
+
+                <Button
+                    android:id="@+id/buttonAnnuler"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="#F44336"
+                    android:text="Annuler Demande" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

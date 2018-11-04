@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/entete"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/TxtViewMatricule"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:text="Matricule"
+
+
+            android:textColor="@color/colorAccent"/>
+
+
+        <TextView
+            android:id="@+id/TxtViewNomPrenom"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:text="Nom et Prénom"
+            android:textColor="@color/colorAccent"
+
+            />
+        <TextView
+            android:id="@+id/TxtViewlibqual"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Fonction"
+            android:textColor="@color/colorAccent"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

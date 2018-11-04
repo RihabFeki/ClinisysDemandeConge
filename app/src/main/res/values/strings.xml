@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name"></string>
+
+
+    <string name="action_settings">Paramètres</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_liste_demande_conge">liste des demandes de congé </string>
+    <string name="nav_item_Deconnexion">Déconnexion</string>
+    <string name="nav_item_demande_conge">Demande congé</string>
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_demande_conge</item>
+        <item>@string/nav_item_liste_demande_conge</item>
+        <item>@string/nav_item_Deconnexion</item>
+
+    </string-array>
+    <string-array name="menu_search">
+        <item>@string/nav_item_demande_conge</item>
+        <item>@string/nav_item_liste_demande_conge</item>
+        <item>@string/nav_item_Deconnexion</item>
+
+    </string-array>
+
+    <string name="title_demande_conge">Demande congé</string>
+    <string name="title_liste_demande_conge">liste des demandes congé</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.csys.clinisys.demandeconge.fragment.ListeDemandeCongeFragment"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#96838ea6"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txtViewDu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Du :"
+            android:textColor="#DB1702"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/calendar"/>
+
+        <EditText
+            android:id="@+id/edtTextDateDu"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ems="10"
+            android:inputType="date" />
+
+
+        <TextView
+            android:id="@+id/txtViewAu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Au :"
+            android:textColor="#DB1702"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/calendar"/>
+
+        <EditText
+            android:id="@+id/edtTextDateAu"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ems="10"
+            android:inputType="date" />
+
+        <LinearLayout
+            android:layout_width="24dp"
+            android:layout_height="34dp"
+            android:layout_weight="0.93"></LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="28dp"
+            android:layout_height="33dp"
+            android:background="@drawable/filter1"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:visibility="visible"
+            android:enabled="true"
+            android:selectAllOnFocus="true"
+            android:textIsSelectable="true"
+            android:contextClickable="true"
+            android:textEditSuggestionItemLayout="@menu/pop_up_menu"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00a68883">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>

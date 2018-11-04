@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Tous" android:title="Tous" android:checked="true" />
+    <item android:id="@+id/DemACC" android:title="Demande Accordée" />
+    <item android:id="@+id/DemRef" android:title="Demande Refusée" />
+    <item android:id="@+id/DemEnCour" android:title="Demande en cours" />
+    <item android:id="@+id/DemEnA" android:title="Demande en attente" />
+    <item android:id="@+id/DemAnnule" android:title="Demande Annulée" />
+
+</menu>
